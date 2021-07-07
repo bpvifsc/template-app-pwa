@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Modelo - App de Apresentação</title>
+    <script src='main.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#" onclick="mostraPagina('home')">Empresa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('sobre')"
+              data-toggle="collapse" data-target="#menuNavbar">Sobre a empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('servicos')"
+              data-toggle="collapse" data-target="#menuNavbar">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraPagina('equipe')"
+                data-toggle="collapse" data-target="#menuNavbar">Equipe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraPagina('contato')"
+                data-toggle="collapse" data-target="#menuNavbar">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="container w-100 h-100 p-0">
+          
+          <section id="home" class="p-5 text-center h-100">
+            <img src="imagens/bootstrap.jpg" class="rounded-circle w-100 mt-5">
+          </section>
+
+          <section id="sobre" class="sobre p-5 text-center collapse">
+            <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+          </section>
+
+          <section id="servicos" class="equipe mt-3 p-5 collapse">
+            <div class="card" >
+                <h5 class="card-header">Desenvolvimento Web</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Paginas Web</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et neque, nemo velit explicabo eos obcaecati, modi earum illo commodi quidem ex ea odio reiciendis officia distinctio tempora atque soluta dolore?</p>
+                    <a href="mailto:orcamento@empresa.com" class="btn btn-primary">Orçamento</a>
+                </div>
+            </div>
+    
+            <div class="card mt-2" >
+                <h5 class="card-header">Aplicativos Móveis</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Crie seu app</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et neque, nemo velit explicabo eos obcaecati, modi earum illo commodi quidem ex ea odio reiciendis officia distinctio tempora atque soluta dolore?</p>
+                    <a href="mailto:orcamento@empresa.com" class="btn btn-primary">Orçamento</a>
+                </div>
+            </div>
+          </section>
+
+          <section id="equipe" class="equipe mt-3 p-5 text-center collapse">
+            <div class="card" >
+                <img class="card-img-top" src="imagens/linus-torvalds.jpg" >
+                <div class="card-body">
+                  <h5 class="card-title">Linus Torvalds</h5>
+                  <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit dolor qui quaerat, sit tempora velit deserunt suscipit a repudiandae iusto, ut, rerum sunt debitis? Labore delectus vitae possimus dolores?</p>
+                </div>
+            </div>
+    
+            <div class="card mt-2" >
+                <img class="card-img-top" src="imagens/tim-berners-lee.jpg" >
+                <div class="card-body">
+                  <h5 class="card-title">Tim Berners Lee</h5>
+                  <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit dolor qui quaerat, sit tempora velit deserunt suscipit a repudiandae iusto, ut, rerum sunt debitis? Labore delectus vitae possimus dolores?</p>
+                </div>
+            </div>
+          </section>
+
+          <section id="contato" class="sobre p-5 text-center collapse">
+            <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
+            <h3>Entre em contato conosco</h3>
+            <p>
+                <a href="mailto:contato@empresa.com">
+                    <img class="w-25" src="imagens/mail.svg" />                
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=55489999912345&text='Texto da Mensagem'">
+                    <img class="w-25" src="imagens/wpp-logo.svg" />
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://www.instagram.com/empresa/">
+                    <img class="w-25" src="imagens/ig-logo.svg" />
+                </a>
+            </p>
+            
+          </section>
+
+      </main>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

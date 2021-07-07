@@ -1,4 +1,4 @@
-const version = 1
+const version = 2
 const cachename = 'app-cache-v'+version
 const arquivos = [
     "/",

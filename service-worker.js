@@ -1,4 +1,4 @@
-const version = 2
+const version = 3
 const cachename = 'app-cache-v'+version
 const arquivos = [
     "/",
@@ -6,14 +6,16 @@ const arquivos = [
     "/main.js",
     "/service-worker.js",
     "/manifest.json",
-    "/estilo.css",
+    "/estilos.css",
     "/imagens/bootstrap.jpg",
-    "/imagens/iq-logo.svg",
+    "/imagens/ig-logo.svg",
     "/imagens/linus-torvalds.jpg",
     "/imagens/logo.png",
     "/imagens/mail.svg",
     "/imagens/tim-berners-lee.jpg",
-    "/imagens/wpp-logo.svg"
+    "/imagens/wpp-logo.svg",
+    "/imagens/icone192.png",
+    "/imagens/icone512.png"
   ]
   self.addEventListener('install', function(event) {
     event.waitUntil(

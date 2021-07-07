@@ -3,7 +3,7 @@
   "short_name": "TemplateAPP",
   "name": "APP Bootstrap PWA",
   "description": "Template de aplicativo baseado em Bootstrap, SPA e PWA",
-  "scope": "/",
+  "scope": "./",
   "icons": [
     {
       "src": "imagens/icone192.png",

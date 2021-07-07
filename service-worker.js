@@ -7,7 +7,10 @@ const cachename = 'app-cache-v'+version
  * Ex: arquivo logo.png
  *      URL: https://bpvifsc.github.io/template-app-pwa/imagens/logo.png
  *      Caminho: /template-app-pwa/imagens/logo.png
- *     
+ * Ou utilizar caminhos relativos ao arquivo html aberto
+ * Ex: arquivo aberto index.html (utilizar em PWA)
+ *      URL: https://bpvifsc.github.io/template-app-pwa/index.html
+ *      Caminho: ./imagens/logo.png
  */
 const arquivos = [
     "./",

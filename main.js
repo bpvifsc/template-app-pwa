@@ -7,5 +7,5 @@ function mostraPagina(pg) {
 
 //Registra o serviceWorker da aplicação
 if ('serviceWorker' in navigator) {  
-    navigator.serviceWorker.register("service-worker.js");
+    navigator.serviceWorker.register("./service-worker.js");
 }

@@ -1,4 +1,4 @@
-const version = 3
+const version = 4
 const cachename = 'app-cache-v'+version
 
 /**
@@ -10,21 +10,21 @@ const cachename = 'app-cache-v'+version
  *     
  */
 const arquivos = [
-    "/template-app-pwa/",
-    "/template-app-pwa/index.html",
-    "/template-app-pwa/main.js",
-    "/template-app-pwa/service-worker.js",
-    "/template-app-pwa/manifest.json",
-    "/template-app-pwa/estilos.css",
-    "/template-app-pwa/imagens/bootstrap.jpg",
-    "/template-app-pwa/imagens/ig-logo.svg",
-    "/template-app-pwa/imagens/linus-torvalds.jpg",
-    "/template-app-pwa/imagens/logo.png",
-    "/template-app-pwa/imagens/mail.svg",
-    "/template-app-pwa/imagens/tim-berners-lee.jpg",
-    "/template-app-pwa/imagens/wpp-logo.svg",
-    "/template-app-pwa/imagens/icone192.png",
-    "/template-app-pwa/imagens/icone512.png"
+    "./",
+    "./index.html",
+    "./main.js",
+    "./service-worker.js",
+    "./manifest.json",
+    "./estilos.css",
+    "./imagens/bootstrap.jpg",
+    "./imagens/ig-logo.svg",
+    "./imagens/linus-torvalds.jpg",
+    "./imagens/logo.png",
+    "./imagens/mail.svg",
+    "./imagens/tim-berners-lee.jpg",
+    "./imagens/wpp-logo.svg",
+    "./imagens/icone192.png",
+    "./imagens/icone512.png"
   ]
   self.addEventListener('install', function(event) {
     event.waitUntil(

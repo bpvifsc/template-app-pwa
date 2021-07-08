@@ -1,3 +1,9 @@
+/**
+ * Versão do cache, é importante mudar o valor da variável 'version'
+ * toda vez que algum dos arquivos em no array 'arquivos' for modificado
+ * isso garante que a aplicação será atualizada nos clientes onde já exista
+ * um cache salvo
+ */
 const version = 4
 const cachename = 'app-cache-v'+version
 
@@ -29,6 +35,10 @@ const arquivos = [
     "./imagens/icone192.png",
     "./imagens/icone512.png"
   ]
+
+  /**
+   * Cria o cache dos arquivos
+   */
   self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open(cachename).then(function(cache) {
@@ -37,6 +47,11 @@ const arquivos = [
     );
   });
   
+  /**
+   * Verifica se existe uma versão em cache das páginas
+   * Caso não seja possivel retorna o match(index) da catch
+   * Está página pode ser tratada e retornar uma mensagem de erro/offline
+   */
   self.addEventListener('fetch', function(event) {
     event.respondWith(caches.match(event.request).then(function(response) {
       if (response !== undefined) {
@@ -50,7 +65,7 @@ const arquivos = [
           });
           return response;
         }).catch(function () {
-          return caches.match('/index.html');
+          return caches.match('./index.html');
         });
       }
     }));

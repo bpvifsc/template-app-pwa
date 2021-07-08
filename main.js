@@ -9,3 +9,12 @@ function mostraPagina(pg) {
 if ('serviceWorker' in navigator) {  
     navigator.serviceWorker.register("./service-worker.js");
 }
+
+var pedidoInstalacao;
+window.addEventListener('beforeinstallprompt', function(e) {
+  pedidoInstalacao = e;
+});
+
+function installApp() {
+    pedidoInstalacao.prompt(); 
+}

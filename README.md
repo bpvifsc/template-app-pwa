@@ -48,13 +48,13 @@ Todos os caminhos de arquivos estão colocados de maneira relativa,
 para que o funcionamento seja possível em servidor local e no github pages.
 
 * manifest.json:
-* * "scope": "./",
+    * "scope": "./",
 
 * main.js:
-* * register("./service-worker.js");
+    * register("./service-worker.js");
 
 * service-worker.js:
-* * Todos os elementos do array ```arquivos```
+    * Todos os elementos do array ```arquivos```
 
 Em uma aplicação real é indicado que estes caminhos sejam caminhos absolutos 
 para um mesmo domínio web.

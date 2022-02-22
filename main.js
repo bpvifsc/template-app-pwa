@@ -1,5 +1,4 @@
 var pgAtual = "#home";
-
 function mostraPagina(pg) {
     //Cria o registro e adiciona(pushstate) no histórico do navegador
     const state = { 'page_id': pg }   
@@ -18,7 +17,6 @@ function atualizaPaginaView(pg) {
 
 //Evento chamado sempre que o navegador volta um nível no histórico
 window.addEventListener('popstate', (event) => {
-    console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
     if(event.state==null){
         atualizaPaginaView('#home');
     }else{
